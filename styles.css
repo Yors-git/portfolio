@@ -1,0 +1,88 @@
+html {
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #333;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: white;
+}
+
+#mainNav {
+  transition: all 0.5s ease-in-out;
+}
+
+#my-background {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 870px;
+}
+
+.chngColor {
+  background-color: #808080;
+}
+
+.wordCarousel div {
+  overflow: hidden;
+  position: relative;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+.wordCarousel div ul {
+  padding: 1rem 0;
+}
+.wordCarousel div li {
+  padding: 0;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+.port-spans {
+  line-height: 2rem;
+}
+
+.port-mod-link {
+  color: #808080;
+  text-decoration: underline;
+}
+
+.port-mod-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .port-mod-cont {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .chngColor {
+    background-color: #80808000;
+  }
+}
