@@ -21,6 +21,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("mainNav").style.backgroundColor = "rgb(255,255,255)";
     document.getElementById("mainNav").style.boxShadow = "0 0 3px #80808085";
+    document.getElementById("nav-brand").style.color = "black";
     for (var i = 0; i < navItems.length; i++) {
     navItems[i].style.color = "black";
     }
@@ -28,6 +29,7 @@ function scrollFunction() {
   } else {
     document.getElementById("mainNav").style.backgroundColor = "rgb(255,255,255,0)";
     document.getElementById("mainNav").style.boxShadow = "none";
+    document.getElementById("nav-brand").style.color = "white";
     for (var i = 0; i < navItems.length; i++) {
     navItems[i].style.color = "white";
     }
